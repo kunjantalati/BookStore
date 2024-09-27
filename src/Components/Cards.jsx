@@ -6,22 +6,22 @@ function Cards({ item }) {
 
   return (
     <>
-      <div>
+      <div className='mt-4 my-3'>
         <div className="card bg-base-100 w-96 shadow-xl">
           <figure>
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
+              src="i2.jpg"
+              alt="Shoes"  />
           </figure>
           <div className="card-body">
             <h2 className="card-title">
-              Shoes!
-              <div className="badge badge-secondary">NEW</div>
+              {item.name}
+              <div className="badge badge-secondary">{item.category}</div>
             </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-end">
-              <div className="badge badge-outline">Fashion</div>
-              <div className="badge badge-outline">Products</div>
+            <p>{item.title}</p>
+            <div className="card-actions justify-between">
+              <div className="badge badge-outline">${item.price}</div>
+              <div className="cursor-pointer px-2 py-1 rounded-full hover:bg-pink-500 hover:text-white duraton-200">Buy Now</div>
             </div>
           </div>
         </div>

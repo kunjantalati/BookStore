@@ -36,7 +36,7 @@ function Banner() {
 
         {/* Image Section */}
         <div className='order-1 w-full md:w-1/2 ml-10'>
-          <img src="i1.jpg" className='w-100 max-h-[50%] ml-[20rem] my-5' alt="Banner" />
+          <img src="i1.jpg"  alt="Banner" />
         </div>
       </div>
     </>
